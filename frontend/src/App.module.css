@@ -1,0 +1,121 @@
+/* src/AuthForm.module.css */
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 2rem;
+  background-color: #fff; /* White background */
+  width: 100%;
+}
+
+.formCard {
+  background: #fff; /* White background */
+  padding: 2rem;
+  border-radius: 4px; /* Less rounded */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Even subtler shadow */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  font-family: sans-serif; /* Simpler font */
+}
+
+.hotelBranding {
+  font-size: 1.5rem; /* Smaller */
+  font-weight: 600;
+  color: #000; /* Black text */
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.formTitle {
+  font-size: 1.2rem; /* Smaller */
+  color: #000; /* Black text */
+  margin-bottom: 1rem;
+  font-weight: 400; /* Lighter */
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputGroup {
+  text-align: left;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #000; /* Black text */
+  font-size: 0.85rem;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #000; /* Black text */
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #000; /* Black focus border */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Subtle focus shadow */
+}
+
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.togglePasswordButton {
+  background: none;
+  border: none;
+  color: #000; /* Black text */
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.togglePasswordButton:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.submitButton {
+  background-color: #000; /* Black button */
+  color: #fff; /* White text */
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #333; /* Darker black on hover */
+}
+
+.formLink {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #666; /* Dark gray */
+}
+
+.formLink a {
+  color: #000; /* Black link */
+  font-weight: 500;
+}

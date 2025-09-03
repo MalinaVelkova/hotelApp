@@ -1,0 +1,168 @@
+/* src/AuthForm.module.css */
+/* Re-introducing original color variables and Montserrat font for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-blue: #2c3e50; /* Dark blue from header */
+  --secondary-blue: #3498db; /* A slightly lighter blue for accents */
+  --light-gray-bg: #f8f8f8; /* Background color from main content areas */
+  --border-subtle: #e0e0e0; /* Subtle border color for inputs */
+  --text-dark: #333;
+  --text-light: #666;
+  --button-hover-blue: #2980b9;
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+}
+
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust based on header height */
+  padding: 2rem;
+  background-color: var(--light-gray-bg); /* Use the calming light gray background */
+  width: 100%;
+}
+
+.formCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid var(--primary-blue); /* Changed to use the primary blue from your palette */
+}
+
+
+.hotelBranding {
+  font-size: 2.2rem; /* Clearer branding */
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.formTitle {
+  /* This class is effectively hidden as per your CSS, but kept for semantic structure if needed later */
+  display: none;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.inputGroup {
+  text-align: left;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  font-weight: 500; /* Make label slightly bolder */
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--border-subtle);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  outline-color: black;
+}
+
+.inputField:focus {
+  border-color: var(--primary-blue); /* Matches button color */
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.2); /* Soft shadow using primary-blue RGBA */
+}
+
+/* Password related styles are not directly used on ForgotPasswordPage but are kept in the module */
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.togglePasswordButton {
+  background: none;
+  border: none;
+  color: var(--link-color);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+}
+
+.togglePasswordButton:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+.submitButton {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.submitButton:hover {
+  background-color: var(--button-hover-blue);
+  transform: translateY(-2px);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+.formLink {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.formLink a {
+  color: var(--link-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.forgotPasswordContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+/* src/AuthForm.module.css */
+/* ... други класове ... */
+
+.instructionText { /* Existing class for the instruction text */
+  font-size: 15px;
+  color: #666666; /* Current light gray color */
+  margin-bottom: 25px;
+}
+
+.darkerInstructionText { /* NEW CLASS for darker text */
+  color: #333333; /* Or var(--text-dark); */
+  font-weight: 500; /* Optional: make it slightly bolder */
+}
+

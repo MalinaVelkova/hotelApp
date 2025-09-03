@@ -1,0 +1,39 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-blue: #2c3e50; /* Dark blue from header */
+  --secondary-blue: #3498db; /* A slightly lighter blue for accents */
+  --light-gray-bg: #f8f8f8; /* Background color from main content areas (now used for form card background if needed) */
+  --border-subtle: #e0e0e0; /* Subtle border color for inputs */
+  --text-dark: #333;
+  --text-light: #666;
+  --button-hover-blue: #2980b9;
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+
+  --dark-page-background: #1e2a38; /* A dark blue-gray for the overall page background */
+  --light-text-on-dark: #f0f0f0; /* Light text for dark backgrounds */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: var(--dark-page-background); /* Apply dark background here */
+  color: var(--light-text-on-dark); /* Default text color on dark background */
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color); /* Links might still be blue, adjust if needed */
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
